@@ -6,8 +6,8 @@ public class Playa : MonoBehaviour
     float horizInput;
     public float hp = 100;
 
-    private delegate void OnPlayerDeath();
-    public static OnPlayerDeath onPlayerDeath;
+    public delegate void OnPlayerDeath();
+    public static event OnPlayerDeath onPlayerDeath;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
